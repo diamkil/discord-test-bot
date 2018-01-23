@@ -2,19 +2,53 @@ const Discord = require("discord.js");
 const bot = new Discord.Client();
 
 bot.on('message', (message) => {
+    //ping pong
     if(message.content == 'ping') {
         message.channel.sendMessage('pong');
     }
-    if(message.content == 'bonjour') {
-        message.reply('bonjour');
-    }
-    if(message.content == '!help') {
-        message.reply('Voici quelques commandes:');
-        message.channel.sendMessage('Aide: !help');
-        message.channel.sendMessage('Vous verez: ping');
-        message.channel.sendMessage('Se faire dire bonjour: bonjour');
+    if(message.contect == 'Ping') {
+        message.channel.sendMessage('Pong');
     }
 
+
+    //bonjour, salut et allo
+    if(message.content == 'bonjour') {
+        message.reply('Bonjour');
+    }
+
+    if(message.content == 'salut') {
+        message.reply('Salut');
+    }
+
+    if(message.content == 'allo') {
+        message.reply('Allo');
+    }
+
+    //commande yo
+    if(message.content == 'yo cool bot') {
+        message.reply('Yo cool man');
+    }
+
+
+    //PingPong44
+    if(message.content == 'ping44') {
+        message.reply('PingPong44');
+    }
+
+
+    //liste de commandes
+    if(message.content == 'help') {
+        message.reply('Voici quelques commandes: \nAide: help ou -h \n\nVous verez: ping \n\nSe faire dire bonjour: bonjour \nSe faire dire Salut: salut \nSe faire dire Allo: allo \n\nSe faire dir Yo: yo cool bot \n\nNe pas mettre de majuscules!');
+    }
+    if(message.content == '-h') {
+        message.reply('Voici quelques commandes: \nAide: help ou -h \n\nVous verez: ping \n\nSe faire dire bonjour: bonjour \nSe faire dire Salut: salut \nSe faire dire Allo: allo \n\nSe faire dir Yo: yo cool bot \n\nNe pas mettre de majuscules!');
+    }
 });
 
-bot.login('NDA1MzIyNzgyMTEzNjYwOTM5.DUj0MQ.DIfsUc9wczMbEvTgypiKzrzaoG8');
+bot.login('NDA1NDEyNzcwMTQ2ODExOTE1.DUkBlQ.gwQbdhwxXfOsuIlh14_16Z-brBw');
+
+
+bot.on("ready", function () {
+    console.log("Ready to serv you, sir!");
+    console.log("press CTRL+C to stop me")
+});
