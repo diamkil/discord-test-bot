@@ -38,7 +38,7 @@ bot.on('message', (message) => {
     }
     
     
-    if(message.content == '-clearall') {
+    if(message.content == '-ca') {
         message.channel.sendMessage('!clear 999999');
     }
 
