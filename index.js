@@ -5,9 +5,11 @@ bot.on('message', (message) => {
     //ping pong
     if(message.content == 'ping') {
         message.channel.sendMessage('pong');
+        message.channel.sendMessage(new Date().getTime() - message.createdTimestamp + " ms");
     }
     if(message.contect == 'Ping') {
         message.channel.sendMessage('Pong');
+        message.channel.sendMessage(new Date().getTime() - message.createdTimestamp + " ms");
     }
 
 
