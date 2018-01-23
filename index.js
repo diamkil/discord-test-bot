@@ -50,6 +50,5 @@ bot.login('NDA1NDEyNzcwMTQ2ODExOTE1.DUlBRQ.3sjeInHpwaSXWcGYCA8UqvzoY_g');
 
 bot.on("ready", function () {
     console.log("Ready to serv you, sir!");
-    message.channel.sendMessage('Ready to serv');
     console.log("press CTRL+C to stop me")
 });
