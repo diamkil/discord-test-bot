@@ -50,5 +50,6 @@ bot.login('NDA1NDEyNzcwMTQ2ODExOTE1.DUlBRQ.3sjeInHpwaSXWcGYCA8UqvzoY_g');
 
 bot.on("ready", function () {
     console.log("Ready to serv you, sir!");
-    console.log("press CTRL+C to stop me")
+    console.log("press CTRL+C to stop me");
+    bot.user.setStatus("serving diamkil!")
 });
