@@ -40,10 +40,10 @@ bot.on('message', (message) => {
 
     //liste de commandes
     if(message.content == 'help') {
-        message.reply('Voici quelques commandes: \nAide: help ou -h \n\nVous verez: ping \n\nSe faire dire bonjour: bonjour \nSe faire dire Salut: salut \nSe faire dire Allo: allo \n\nSe faire dir Yo: yo cool bot \n\nNe pas mettre de majuscules!');
+        message.reply('Voici quelques commandes: \nAide: help ou -h \n\nCalculer le ping: ping \n\nSe faire dire bonjour: bonjour \nSe faire dire Salut: salut \nSe faire dire Allo: allo \n\nSe faire dir Yo: yo cool bot \n\nNe pas mettre de majuscules!');
     }
     if(message.content == '-h') {
-        message.reply('Voici quelques commandes: \nAide: help ou -h \n\nVous verez: ping \n\nSe faire dire bonjour: bonjour \nSe faire dire Salut: salut \nSe faire dire Allo: allo \n\nSe faire dir Yo: yo cool bot \n\nNe pas mettre de majuscules!');
+        message.reply('Voici quelques commandes: \nAide: help ou -h \n\nCalculer le ping: ping \n\nSe faire dire bonjour: bonjour \nSe faire dire Salut: salut \nSe faire dire Allo: allo \n\nSe faire dir Yo: yo cool bot \n\nNe pas mettre de majuscules!');
     }
 });
 
